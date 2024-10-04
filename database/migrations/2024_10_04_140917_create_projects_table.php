@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
             $table->unsignedInteger('bau_id');
-            $table->string('name');
+            $table->string('title');
             $table->text('content')->nullable();
             $table->text('responsibilities_1')->nullable();
             $table->text('responsibilities_2')->nullable();

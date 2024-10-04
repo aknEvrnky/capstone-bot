@@ -12,7 +12,7 @@ class Project extends Model
 
     protected $fillable = [
         'bau_id',
-        'name',
+        'title',
         'content',
         'responsibilities_1',
         'responsibilities_2',

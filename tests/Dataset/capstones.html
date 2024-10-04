@@ -1,0 +1,573 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | BAU Engineering - Capstone</title>
+
+    <meta name="description" content="">
+    <link rel="icon" type="image/x-icon" href="/static/img/logo/icon-128.png">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="manifest" href="/static/js/manifest.json">
+    <link href="/static/vendor/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/all.min.css"/>
+
+    <script src="/static/vendor/popper.min.js"></script>
+    <script src="/static/vendor/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="/static/vendor/bootstrap-select.min.css"/>
+    <script src="/static/vendor/jquery-3.6.0.min.js"></script>
+    <script src="/static/vendor/bootstrap-select.min.js"></script>
+
+    <style>
+        .btn-secondary {
+            background-color: rgb(16, 61, 121) !important;
+            border-color:  rgb(16, 61, 121) !important;
+            --bs-btn-active-bg: rgb(16, 61, 121) !important;
+        }
+        .btn-secondary:hover {
+            background-color: rgb(16, 61, 121) !important;
+            border-color:  rgb(16, 61, 121) !important;
+            --bs-btn-active-bg: rgb(16, 61, 121) !important;
+
+        }
+    </style>
+
+
+
+</head>
+
+
+<body>
+
+
+
+
+<!-- Header -->
+<header class="header">
+    <div class="header-container">
+
+        <a href="/" class="header-logo fs-5">Bahcesehir University</a>
+        <div class="header-toggle">
+            <i class='bx bx-menu fa-solid fa-bars' id="header-toggle"></i>
+        </div>
+    </div>
+</header>
+
+
+<!-- Navigation Menu -->
+<div class="nav61" id="navbar">
+    <nav61 class="nav61-container">
+        <div>
+            <a href="/" class="nav61-link nav61-logo">
+                <img src="/static/img/logo/logo.png" class="header-image">
+                <span class="nav61-logo-name"></span>
+            </a>
+            <div class="nav61-list">
+
+
+
+
+
+                <div class="nav61-items">
+                    <h3 class="nav61-subtitle">CAPSTONE</h3>
+
+                    <div class="nav61-dropdown my-1">
+                        <a href="#!" class="nav61-link">
+                            <i class='bx bx-user nav61-icon fa-solid fa-book-open' style="width: 30px;"></i>
+                            <span class="nav61-name">SYLLABUS</span>
+                            <i class='bx bx-chevron-down nav61-icon-mini nav61-dropdown-icon fa-solid fa-arrow-down'></i>
+                        </a>
+                        <div class="nav61-dropdown-collapse">
+                            <div class="nav61-dropdown-content">
+                                <a href="/info/course-syllabus" class="nav61-dropdown-item">COURSE SYLLABUS</a>
+                                <a href="/info/departments-and-teams" class="nav61-dropdown-item">DEPARTMENTS AND TEAMS</a>
+                                <a href="/info/course-objectives" class="nav61-dropdown-item">COURSE OBJECTIVES</a>
+                                <a href="/info/expectations" class="nav61-dropdown-item">EXPECTATIONS</a>
+                                <a href="/info/student-responsibilities" class="nav61-dropdown-item">STUDENT RESPONSIBILITIES</a>
+                                <a href="/info/advisor-responsibilities" class="nav61-dropdown-item">ADVISOR RESPONSIBILITIES</a>
+                                <a href="/info/project-management" class="nav61-dropdown-item">PROJECT MANAGEMENT</a>
+                                <a href="/info/learning" class="nav61-dropdown-item">LEARNING</a>
+                                <a href="/info/making" class="nav61-dropdown-item">MAKING</a>
+                                <a href="/info/assessment" class="nav61-dropdown-item">STUDENT ASSESSMENT</a>
+                                <a href="/info/contacts" class="nav61-dropdown-item">CONTACTS</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nav61-dropdown my-1">
+                        <a href="#!" class="nav61-link">
+                            <i class='bx bx-user nav61-icon fa-solid fa-calendar-days' style="width: 30px;"></i>
+                            <span class="nav61-name">SCHEDULE</span>
+                            <i class='bx bx-chevron-down nav61-icon-mini nav61-dropdown-icon fa-solid fa-arrow-down'></i>
+                        </a>
+
+                        <div class="nav61-dropdown-collapse">
+                            <div class="nav61-dropdown-content">
+                                <a href="/info/schedule-for-4991" class="nav61-dropdown-item">SCHEDULE FOR 4991</a>
+                                <a href="/info/schedule-for-4992" class="nav61-dropdown-item">SCHEDULE FOR 4992</a>
+                                <a href="/info/presentations" class="nav61-dropdown-item">PRESENTATIONS</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nav61-dropdown my-1">
+                        <a href="#!" class="nav61-link">
+                            <i class='bx bx-user nav61-icon fa-solid fa-scale-balanced' style="width: 30px;"></i>
+                            <span class="nav61-name">REGULATIONS</span>
+                            <i class='bx bx-chevron-down nav61-icon-mini nav61-dropdown-icon fa-solid fa-arrow-down'></i>
+                        </a>
+
+                        <div class="nav61-dropdown-collapse">
+                            <div class="nav61-dropdown-content">
+                                <a href="/info/double-major-students" class="nav61-dropdown-item">DOUBLE MAJOR STUDENTS</a>
+                                <a href="/info/financial-support" class="nav61-dropdown-item">FINANCIAL SUPPORT</a>
+                                <a href="/info/summer-capstone" class="nav61-dropdown-item">SUMMER CAPSTONE</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="nav61-dropdown my-1">
+                        <a href="#!" class="nav61-link">
+                            <i class='bx bx-user nav61-icon fa-solid fa-folder' style="width: 30px;"></i>
+                            <span class="nav61-name">RESOURCES</span>
+                            <i class='bx bx-chevron-down nav61-icon-mini nav61-dropdown-icon fa-solid fa-arrow-down'></i>
+                        </a>
+
+                        <div class="nav61-dropdown-collapse">
+                            <div class="nav61-dropdown-content">
+                                <a href="/info/lecture-notes" class="nav61-dropdown-item">LECTURE NOTES</a>
+                                <a href="/info/report-templates" class="nav61-dropdown-item">REPORT TEMPLATES</a>
+                                <a href="/info/software-and-guides" class="nav61-dropdown-item">SOFTWARE AND GUIDES</a>
+                                <a href="/info/statistical-analysis" class="nav61-dropdown-item">STATISTICAL ANALYSIS</a>
+                                <a href="/info/laboratory" class="nav61-dropdown-item">LABORATORY</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="nav61-dropdown my-1">
+                        <a href="#!" class="nav61-link">
+                            <i class='bx bx-user nav61-icon fa-solid fa-book-bookmark' style="width: 30px;"></i>
+                            <span class="nav61-name">PROJECTS</span>
+                            <i class='bx bx-chevron-down nav61-icon-mini nav61-dropdown-icon fa-solid fa-arrow-down'></i>
+                        </a>
+
+                        <div class="nav61-dropdown-collapse">
+                            <div class="nav61-dropdown-content">
+                                <a href="/info/exhibitions" class="nav61-dropdown-item">EXHIBITIONS</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nav61-dropdown my-1">
+                        <a href="#!" class="nav61-link">
+                            <i class='bx bx-user nav61-icon fa-solid fa-lightbulb' style="width: 30px;"></i>
+                            <span class="nav61-name">CONCEPTS</span>
+                            <i class='bx bx-chevron-down nav61-icon-mini nav61-dropdown-icon fa-solid fa-arrow-down'></i>
+                        </a>
+
+                        <div class="nav61-dropdown-collapse">
+                            <div class="nav61-dropdown-content">
+                                <a href="/info/safety-first" class="nav61-dropdown-item">SAFETY FIRST</a>
+                                <a href="/info/ethical-thinking" class="nav61-dropdown-item">ETHICAL THINKING</a>
+                                <a href="/info/project-management-concepts" class="nav61-dropdown-item">PROJECT MANAGEMENT CONCEPTS</a>
+                                <a href="/info/ethical-thinking" class="nav61-dropdown-item">ETHICAL THINKING</a>
+                                <a href="/info/engineering-design" class="nav61-dropdown-item">ENGINEERING DESIGN</a>
+                                <a href="/info/verification" class="nav61-dropdown-item">VERIFICATION</a>
+                                <a href="/info/documentation" class="nav61-dropdown-item">DOCUMENTATION</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="nav61-subtitle mt-3">ACTIONS</h3>
+                    <a href="/logout" class="nav61-link my-1">
+                        <i class='bx bx-user nav61-icon fa-solid fa-sign-out' style="width: 30px;"></i>
+                        <span class="nav61-name">LOGOUT</span>
+                    </a>
+
+                    <div class="mb-5 d-block d-md-none" id="mobile-menu-tweak"></div>
+                </div>
+            </div>
+        </div>
+    </nav61>
+</div>
+
+
+<!-- Body -->
+
+<div class="container-fluid mt-2 mt-md-4">
+
+
+
+
+
+
+
+
+    <div class="row">
+        <div class="col-12 px-4">
+            <form>
+                <div class="row">
+                    <div class="col-12 p-1">
+                        <input type="search" name="search" class="form-control rounded" placeholder="Search projects..." aria-label="Search" aria-describedby="search-addon"  />
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-1">
+                        <select class="selectpicker col-12" name="department-ids" multiple data-style="btn-secondary text-white" title="Select department" >
+
+                            <option value="1" >Industrial Engineering</option>
+
+                            <option value="2" selected>Management Engineering</option>
+
+                            <option value="3" >Mechatronics Engineering</option>
+
+                            <option value="4" >Software Engineering</option>
+
+                            <option value="5" >Electrical And Electronics Engineering</option>
+
+                            <option value="6" >Biomedical Engineering</option>
+
+                            <option value="7" selected>Computer Engineering</option>
+
+                            <option value="8" >Artificial Intelligence Engineering</option>
+
+                            <option value="9" >Civil Engineering</option>
+
+                            <option value="10" >Energy Systems Engineering</option>
+
+                        </select>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-1">
+                        <select class="selectpicker col-12" name="advisor-ids" multiple data-style="btn-secondary text-white" title="Select advisor" >
+
+                            <option value="3" >Adnan Çorum</option>
+
+                            <option value="4" >Alper Camcı</option>
+
+                            <option value="5" >Amir Navidfar</option>
+
+                            <option value="6" >Ayla Gülcü</option>
+
+                            <option value="7" >Ayşe Kavuşturucu</option>
+
+                            <option value="8" >Berke Gür</option>
+
+                            <option value="9" >Bülent Uluğ</option>
+
+                            <option value="10" >Çağlar Sivri</option>
+
+                            <option value="11" >Canan Bağcı</option>
+
+                            <option value="12" >Cemal Okan Şakar</option>
+
+                            <option value="13" >Cihangir Gümüştaş</option>
+
+                            <option value="14" >Derya Bodur</option>
+
+                            <option value="15" >Ece Gelal Soyak</option>
+
+                            <option value="16" >Elif Haktanır Aktaş</option>
+
+                            <option value="17" >Erkut Arıcan</option>
+
+                            <option value="18" >Fatih Kahraman</option>
+
+                            <option value="19" >Gökhan Gelişen</option>
+
+                            <option value="20" >Günet Eroğlu</option>
+
+                            <option value="21" >Gürkan Soykan</option>
+
+                            <option value="22" >Hakan Solmaz</option>
+
+                            <option value="23" >Hassan Imani</option>
+
+                            <option value="24" >Hüseyin Günhan Özcan</option>
+
+                            <option value="25" >İrem Şanal</option>
+
+                            <option value="27" >Lütfü Arda</option>
+
+                            <option value="28" >M. Aslı Aydın</option>
+
+                            <option value="29" >Mehmet Emin Yıldız</option>
+
+                            <option value="30" >Mustafa Özbayrak</option>
+
+                            <option value="31" >Nezihe Yıldıran</option>
+
+                            <option value="33" >Ömer Melih Gül</option>
+
+                            <option value="34" >Ömer Polat</option>
+
+                            <option value="35" >Ozan Akdoğan</option>
+
+                            <option value="36" >Özge Yücel Kasap</option>
+
+                            <option value="38" >Sabri Tankut Atan</option>
+
+                            <option value="39" >Sait Gül</option>
+
+                            <option value="40" >Selçuk Tuzcuoğlu</option>
+
+                            <option value="41" >Selin Nacaklı</option>
+
+                            <option value="42" >Senem Seven</option>
+
+                            <option value="43" >Şeref Kalem</option>
+
+                            <option value="44" >Suzan Üreten</option>
+
+                            <option value="45" >Tamer Uçar</option>
+
+                            <option value="46" >Tarkan Aydın</option>
+
+                            <option value="47" >Tevfik Aytekin</option>
+
+                            <option value="48" >Yalçın Çekiç</option>
+
+                            <option value="49" >Bora Büyüksaraç</option>
+
+                            <option value="50" >Burcu Tunç Çamlıbel</option>
+
+                            <option value="51" >Engin Baysoy</option>
+
+                            <option value="52" >Fırat Matur</option>
+
+                            <option value="53" >Mesut Negin</option>
+
+                            <option value="55" >Duygu Çakır Yenidoğan</option>
+
+                            <option value="56" >Beste Bahceci</option>
+
+                            <option value="57" >Barış Özcan</option>
+
+                            <option value="58" >Binnur Kurt</option>
+
+                            <option value="59" >Rasit ESKICIOGLU</option>
+
+                            <option value="60" >Murat Gökşin BAKIR</option>
+
+                            <option value="61" >Oğuzhan Erdinç</option>
+
+                            <option value="62" >Evrim Tetik</option>
+
+                        </select>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-2 p-1">
+                        <select class="selectpicker col-12" name="capacity-left" data-style="btn-secondary text-white" title="Minimum capacity">
+                            <option value="" selected>Any capacity</option>
+
+                            <option value="1" >1 students left</option>
+
+                            <option value="2" >2 students left</option>
+
+                            <option value="3" >3 students left</option>
+
+                            <option value="4" >4 students left</option>
+
+                            <option value="5" >5 students left</option>
+
+                            <option value="6" >6 students left</option>
+
+                            <option value="7" >7 students left</option>
+
+                            <option value="8" >8 students left</option>
+
+                            <option value="9" >9 students left</option>
+
+                        </select>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-2 p-1">
+                        <input type="submit" class="btn btn-primary d-block w-100" value="Search Projects">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+
+        <div class="col-sm-12 col-lg-6 col-xl-4 p-3">
+            <div class="card text-center shadow-lg bg-white">
+                <div class="card-header" style="background-color: rgb(120, 178, 255);">
+                    <a href="/project/1010881"><h4 class="card-title fw-bold fs-5 mb-0" style="color: rgb(16, 34, 61);">Handling Class Imbalance Problem in Credit Card Fraud Detection II</h4></a>
+                    <p class=" fw-semibold fs-6 m-0 text-light">#1010881</p>
+                </div>
+
+                <div class="card-body">
+                    <p style="color: rgb(16, 34, 61);">Class imbalance is a problem in machine learning that typically occurs when one class contains significantly fewer number samples than the other class in a training data  In this project, class imbalance problem in credit card fraud data is addressed  First, resampling methods like oversampling /undersampling are employed to overcome this problem  Then ML algorithms are trained on balanced data to predict fraudulent transactions</p>
+                </div>
+
+                <div class="card-footer text-dark pt-3" >
+                    <div class="text-center">
+
+                        <h6><span class="badge bg-success text-wrap"> M. Aslı Aydın - Management Engineering (0/3)</span></h6>
+
+                        <h6><span class="badge bg-success text-wrap"> Barış Özcan - Computer Engineering (0/3)</span></h6>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-lg-6 col-xl-4 p-3">
+            <div class="card text-center shadow-lg bg-white">
+                <div class="card-header" style="background-color: rgb(120, 178, 255);">
+                    <a href="/project/1010880"><h4 class="card-title fw-bold fs-5 mb-0" style="color: rgb(16, 34, 61);">Handling Class Imbalance Problem in Credit Card Fraud Detection I</h4></a>
+                    <p class=" fw-semibold fs-6 m-0 text-light">#1010880</p>
+                </div>
+
+                <div class="card-body">
+                    <p style="color: rgb(16, 34, 61);">Class imbalance is a problem in machine learning that typically occurs when one class contains significantly fewer number samples than the other class in a training data  In this project, class imbalance problem in credit card fraud data is addressed  First, resampling methods like oversampling /undersampling are employed to overcome this problem  Then ML algorithms are trained on balanced data to predict fraudulent transactions</p>
+                </div>
+
+                <div class="card-footer text-dark pt-3" >
+                    <div class="text-center">
+
+                        <h6><span class="badge bg-success text-wrap"> M. Aslı Aydın - Management Engineering (0/3)</span></h6>
+
+                        <h6><span class="badge bg-success text-wrap"> Barış Özcan - Computer Engineering (0/3)</span></h6>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-lg-6 col-xl-4 p-3">
+            <div class="card text-center shadow-lg bg-white">
+                <div class="card-header" style="background-color: rgb(120, 178, 255);">
+                    <a href="/project/1010882"><h4 class="card-title fw-bold fs-5 mb-0" style="color: rgb(16, 34, 61);">Handling Class Imbalance Problem In Churn Prediction  I</h4></a>
+                    <p class=" fw-semibold fs-6 m-0 text-light">#1010882</p>
+                </div>
+
+                <div class="card-body">
+                    <p style="color: rgb(16, 34, 61);">Class imbalance is a problem in machine learning that typically occurs when one class contains significantly fewer number samples than the other class in a training data  In this project, class imbalance problem in telecommunications churn data is addressed  First, resampling methods like oversampling /undersampling are employed to overcome this problem  Then ML algorithms are trained on balanced data to predict customers to churn  Finally, promotions/campaign strategies are designed to retain the churners according to the results</p>
+                </div>
+
+                <div class="card-footer text-dark pt-3" >
+                    <div class="text-center">
+
+                        <h6><span class="badge bg-success text-wrap"> M. Aslı Aydın - Management Engineering (0/3)</span></h6>
+
+                        <h6><span class="badge bg-success text-wrap"> Barış Özcan - Computer Engineering (0/3)</span></h6>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-lg-6 col-xl-4 p-3">
+            <div class="card text-center shadow-lg bg-white">
+                <div class="card-header" style="background-color: rgb(120, 178, 255);">
+                    <a href="/project/1010883"><h4 class="card-title fw-bold fs-5 mb-0" style="color: rgb(16, 34, 61);">Handling Class Imbalance Problem In Churn Prediction  II</h4></a>
+                    <p class=" fw-semibold fs-6 m-0 text-light">#1010883</p>
+                </div>
+
+                <div class="card-body">
+                    <p style="color: rgb(16, 34, 61);">Class imbalance is a problem in machine learning that typically occurs when one class contains significantly fewer number samples than the other class in a training data  In this project, class imbalance problem in telecommunications churn data is addressed  First, resampling methods like oversampling /undersampling are employed to overcome this problem  Then ML algorithms are trained on balanced data to predict customers to churn  Finally, promotions/campaign strategies are designed to retain the churners according to the results</p>
+                </div>
+
+                <div class="card-footer text-dark pt-3" >
+                    <div class="text-center">
+
+                        <h6><span class="badge bg-success text-wrap"> M. Aslı Aydın - Management Engineering (0/3)</span></h6>
+
+                        <h6><span class="badge bg-success text-wrap"> Barış Özcan - Computer Engineering (0/3)</span></h6>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-lg-6 col-xl-4 p-3">
+            <div class="card text-center shadow-lg bg-white">
+                <div class="card-header" style="background-color: rgb(120, 178, 255);">
+                    <a href="/project/1010884"><h4 class="card-title fw-bold fs-5 mb-0" style="color: rgb(16, 34, 61);">Handling Class Imbalance Problem In Churn Prediction  III</h4></a>
+                    <p class=" fw-semibold fs-6 m-0 text-light">#1010884</p>
+                </div>
+
+                <div class="card-body">
+                    <p style="color: rgb(16, 34, 61);">Class imbalance is a problem in machine learning that typically occurs when one class contains significantly fewer number samples than the other class in a training data  In this project, class imbalance problem in telecommunications churn data is addressed  First, resampling methods like oversampling /undersampling are employed to overcome this problem  Then ML algorithms are trained on balanced data to predict customers to churn  Finally, promotions/campaign strategies are designed to retain the churners according to the results</p>
+                </div>
+
+                <div class="card-footer text-dark pt-3" >
+                    <div class="text-center">
+
+                        <h6><span class="badge bg-success text-wrap"> M. Aslı Aydın - Management Engineering (0/3)</span></h6>
+
+                        <h6><span class="badge bg-success text-wrap"> Barış Özcan - Computer Engineering (0/3)</span></h6>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-lg-6 col-xl-4 p-3">
+            <div class="card text-center shadow-lg bg-white">
+                <div class="card-header" style="background-color: rgb(120, 178, 255);">
+                    <a href="/project/1010903"><h4 class="card-title fw-bold fs-5 mb-0" style="color: rgb(16, 34, 61);">High Frequency Trading of Bitcoin and other coins  with Machine learning</h4></a>
+                    <p class=" fw-semibold fs-6 m-0 text-light">#1010903</p>
+                </div>
+
+                <div class="card-body">
+                    <p style="color: rgb(16, 34, 61);">The features related to the bitcoin prices should be collected and stored in a database . All the bitcoin prices in the last 3 years should be stored in the database. A linear regression should be applied to see whether these features explain the prices. Then ML algorithms should be applied to predict the future values. A java application should be written to automate the buying and selling options depending on the predicted prices.</p>
+                </div>
+
+                <div class="card-footer text-dark pt-3" >
+                    <div class="text-center">
+
+                        <h6><span class="badge bg-success text-wrap"> Günet Eroğlu - Computer Engineering (0/3)</span></h6>
+
+                        <h6><span class="badge bg-success text-wrap"> Mehmet Emin Yıldız - Management Engineering (0/3)</span></h6>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-lg-6 col-xl-4 p-3">
+            <div class="card text-center shadow-lg bg-white">
+                <div class="card-header" style="background-color: rgb(120, 178, 255);">
+                    <a href="/project/1010906"><h4 class="card-title fw-bold fs-5 mb-0" style="color: rgb(16, 34, 61);">High Frequency Trading of Bitcoin and other coins  with Machine learning (1)</h4></a>
+                    <p class=" fw-semibold fs-6 m-0 text-light">#1010906</p>
+                </div>
+
+                <div class="card-body">
+                    <p style="color: rgb(16, 34, 61);">The features related to the bitcoin prices should be collected and stored in a database . All the bitcoin prices in the last 3 years should be stored in the database. A linear regression should be applied to see whether these features explain the prices. Then ML algorithms should be applied to predict the future values. A java application should be written to automate the buying and selling options depending on the predicted prices.</p>
+                </div>
+
+                <div class="card-footer text-dark pt-3" >
+                    <div class="text-center">
+
+                        <h6><span class="badge bg-success text-wrap"> Günet Eroğlu - Computer Engineering (0/3)</span></h6>
+
+                        <h6><span class="badge bg-success text-wrap"> Mehmet Emin Yıldız - Management Engineering (0/3)</span></h6>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+</div>
+
+<script src="/static/js/main.js"></script>
+
+</body>
+
+</html>
+
+
+
+
