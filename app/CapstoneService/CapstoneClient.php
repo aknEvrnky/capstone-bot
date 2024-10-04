@@ -66,7 +66,7 @@ class CapstoneClient
     }
 
     /**
-     * @return array<array{title: string, link: string}>
+     * @return array<array{title: string, id: string, content: string}>
      */
     public function get(FilterOptions $options): array
     {
@@ -80,7 +80,7 @@ class CapstoneClient
     }
 
     /**
-     * @return array<array{title: string, link: string, content: string}>
+     * @return array<array{title: string, id: string, content: string}>
      */
     protected function extractNodes(string $body): array
     {

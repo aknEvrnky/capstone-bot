@@ -35,4 +35,8 @@ return [
         ],
     ],
 
+    'bau' => [
+        'email' => env('BAU_EMAIL'),
+        'password' => env('BAU_PASSWORD'),
+    ],
 ];
