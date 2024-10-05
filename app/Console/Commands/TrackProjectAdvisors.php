@@ -47,14 +47,14 @@ class TrackProjectAdvisors extends Command
 
             foreach ($projects as $project) {
                 Project::where('bau_id', $project['id'])
-                    ->firstOr(function () use ($project) {
+                    ->firstOr(function () use ($project, $track) {
                         $project = Project::create([
                             'bau_id' => $project['id'],
                             'title' => $project['title'],
                             'content' => $project['content'],
                         ]);
 
-                        Notification::send(User::all(), new NewProjectNotification($project));
+                        Notification::send(User::all(), new NewProjectNotification($project, $track->advisor_id));
 
                         return $project;
                     });

@@ -2,6 +2,7 @@
 
 namespace App\Notifications;
 
+use App\Models\Advisor;
 use App\Models\Project;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -15,7 +16,7 @@ class NewProjectNotification extends Notification
     /**
      * Create a new notification instance.
      */
-    public function __construct(public Project $project)
+    public function __construct(public Project $project, public Advisor $advisor)
     {
         //
     }
@@ -36,8 +37,10 @@ class NewProjectNotification extends Notification
     public function toMail(object $notifiable): MailMessage
     {
         return (new MailMessage)
-            ->subject("New project: {$this->project->title}")
-            ->greeting("New project: {$this->project->title}")
+            ->subject("{$this->project->title} from {$this->advisor->name}")
+            ->greeting("Hi {$notifiable->name},")
+            ->line("{$this->advisor->name} has added a new project.")
+            ->line("{$this->project->title}")
             ->line("{$this->project->content}")
             ->action('View project', "https://capstone.eng.bau.edu.tr/project/{$this->project->bau_id}");
     }
